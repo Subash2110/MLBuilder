@@ -1,0 +1,265 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="body">
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+    
+    <fieldset>
+      <legend><span class="number">1</span> Employee Details</legend>
+      
+      <div class="employee">
+        <mat-form-field class="emp">
+          <mat-label>Employee Number</mat-label>
+          <input 
+          matInput type="number" [(ngModel)]="formData.empNumber" name="empNumber">
+        </mat-form-field>
+
+        <mat-form-field class="name">
+          <mat-label>Employee Name</mat-label>
+          <input matInput type="text" [(ngModel)]="formData.empName" name="empName">
+        </mat-form-field>
+
+        <mat-form-field class="terminal">
+          <mat-label>Terminal ID</mat-label>
+          <mat-select [(ngModel)]="formData.terminalId" name="terminalId">
+            <mat-option *ngFor="let terminal of terminalData" [value]="terminal.id">
+              {{ terminal.id }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </fieldset>
+
+    <fieldset>
+    
+    <legend><span class="number">2</span> Your Profile</legend>
+    
+    <mat-form-field class="cause">
+      <mat-label>Cause Code</mat-label>
+      <mat-select [(ngModel)]="selectedCauseCode" (selectionChange)="onCauseCodeChange()"
+      [disabled]="DisableField('causeCode')" [(ngModel)]="formData.selectedCauseCode" name="selectedCauseCode">
+        <mat-option *ngFor="let cause of causeCode" [value]="cause.key">
+          {{ cause.itemName }} 
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    
+    <div class="profile1">
+
+    
+      <div class="location" *ngIf="showField('location')">
+        <mat-form-field>
+          <mat-label>Location</mat-label>
+          <mat-select [(ngModel)]="formData.location" name="location" required>
+            <mat-option *ngFor="let location of locationArray" [value]="location.key">
+              {{ location.itemName }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="reason" *ngIf="showField('reason')">
+        <mat-form-field>
+          <mat-label>Reason</mat-label>
+          <mat-select [(ngModel)]="formData.reason" name="reason" required >
+            <mat-option *ngFor="let reason of ReasonListPC109" [value]="reason.key">{{ reason.itemName }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    
+      <div class="reason" *ngIf="showField('reason109')">
+        <mat-form-field>
+          <mat-label>Reason 109</mat-label>
+          <mat-select [(ngModel)]="formData.reason109" name="reason109" required >
+            <mat-option *ngFor="let reason of ReasonListPC109" [value]="reason.key">{{ reason.itemName }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="reason" *ngIf="showField('reason111')">
+        <mat-form-field>
+          <mat-label>Reason 111</mat-label>
+          <mat-select [(ngModel)]="formData.reason111" name="reason111"  [(value)]="selectedReason" (selectionChange)="onReasonChange()" required>
+            <mat-option *ngFor="let reason of ReasonListPC111" [value]="reason.key">{{ reason.itemName }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="reason" *ngIf="showField('reason115')">
+        <mat-form-field>
+          <mat-label>Reason 115</mat-label>
+          <mat-select [(ngModel)]="formData.reason115" name="reason115" required >
+            <mat-option *ngFor="let reason of ReasonListPC115" [value]="reason.key">{{ reason.itemName }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="status" *ngIf="showField('status')">
+        <mat-form-field>
+          <mat-label>Status</mat-label>
+          <mat-select [(ngModel)]="formData.status" name="status" required>
+            <mat-option *ngFor="let status of statusArray" [value]="status.key">
+              {{ status.itemName }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="when" *ngIf="showField('when')">
+        <mat-form-field>
+          <mat-label>When</mat-label>
+          <mat-select [(ngModel)]="formData.when" name="when" required>
+            <mat-option *ngFor="let when of whenArray" [value]="when.key">
+              {{ when.itemName }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+    
+    <div class="profile2">
+   
+    
+      <div class="equipment" *ngIf="showField('equipment')" >
+        <mat-form-field>
+          <mat-label>Equipment</mat-label>
+            <mat-select [(ngModel)]="formData.equipment" name="equipment" required>
+              <mat-option *ngFor="let equipment of equipmentArray" [value]="equipment.key">{{ equipment.itemName }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+      </div>
+    
+      <div class="repair" *ngIf="showField('repair')">
+        <mat-form-field>
+          <mat-label>Repair</mat-label>
+          <mat-select [(ngModel)]="formData.repair" name="repair" required>
+            <mat-option *ngFor="let repair of repairArray" [value]="repair.key">{{ repair.itemName }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    
+    </div>
+    
+ 
+  </fieldset>
+
+  <fieldset>
+    <legend><span class="number">3</span> Date & Time</legend>
+   
+
+  
+<div *ngFor="let field of addedDateFields; let i = index" class="dateandtime">
+
+  <div class="date">
+    <mat-form-field>
+      <mat-label>Choose a Date</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="field.date" name="Date{{i}}" required>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="start">
+    <mat-form-field appearance="fill" class="startstart">
+      <mat-label>Start Time</mat-label>
+      <input matInput [ngxTimepicker]="startPicker" readonly
+               [(ngModel)]="field.startTime" 
+               name="StartTime{{i}}" required >
+               <ngx-material-timepicker #startPicker ></ngx-material-timepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="end">
+    <mat-form-field appearance="fill" class="endend">
+      <mat-label>End Time</mat-label>
+      <input matInput [ngxTimepicker]="endPicker" readonly
+        [(ngModel)]="field.endTime" 
+        name="EndTime{{i}}" required>
+        <ngx-material-timepicker #endPicker ></ngx-material-timepicker>
+    </mat-form-field>
+  </div>
+
+  <div *ngIf="addedDateFields.length > 1">
+    <button class="deletebtn" mat-icon-button  (click)="deleteDateTimeField(i)">
+      <i class="fa fa-trash-o" id="top-icon" style="font-size: 25px;"></i>
+    </button>
+  </div>
+</div>
+
+<div *ngIf="shouldShowAddButton()" >
+  <button mat-raised-button color="primary" class="addbtn" (click)="addDateTimeField()" [disabled]="!isAddButtonEnabled()">
+    Add 
+  </button>
+</div>
+
+  </fieldset>
+
+
+
+  <fieldset class="details">
+    <legend><span class="number">4</span> Details</legend>
+  
+    <mat-form-field class="truck">
+      <mat-label>Truck Number</mat-label>
+      <input matInput type="number" placeholder="Enter 4 or 5 Digits" min="1000" max="99999"
+             oninput="if (this.value > 99999999) this.value = 0;"
+             [(ngModel)]="formData.truck" name="truck"
+             [required]="isRequired()"
+             [disabled]="DisableField('truck')" />
+    </mat-form-field>
+  
+    <mat-form-field class="trailer">
+      <mat-label>Trailer Number</mat-label>
+      <input matInput type="number" placeholder="Enter 4 or 8 Digits" min="1000" max="99999999"
+             oninput="if (this.value > 99999999) this.value = 0;"
+             [(ngModel)]="formData.trailer" name="trailer"
+        
+             [required]="isRequired()"
+             [disabled]="DisableField('trailer')" />
+    </mat-form-field>
+  
+    <mat-form-field class="load">
+      <mat-label>Load Number</mat-label>
+      <input matInput type="number" placeholder="Must be 8 Digits" min="10000000" max="99999999"
+             oninput="if (this.value > 99999999) this.value = 0;"
+             [(ngModel)]="formData.load" name="load"
+      
+             [required]="isRequired()"
+             [disabled]="DisableField('load')" />
+    </mat-form-field>
+  
+    <mat-form-field class="units">
+      <mat-label>Number of Units</mat-label>
+      <input matInput type="number" placeholder="Maximum 13 Digits" min="1" max="9999999999999"
+             oninput="if (this.value > 99999999) this.value = 0;"
+             [(ngModel)]="formData.units" name="units"
+     
+             [required]="isUnitsRequired()"
+             [disabled]="DisableField('units')" />
+    </mat-form-field>
+  </fieldset>
+  
+    
+  <fieldset class="contact">
+    <legend><span class="number">5</span> Contact</legend>
+    
+    <div class="check">
+      <mat-checkbox [(ngModel)]="isChecked" [(ngModel)]="formData.terminal" name="terminal">
+        Terminal Notified
+      </mat-checkbox>
+    </div>
+
+    <mat-form-field class="email">
+      <mat-label>Contact Email</mat-label>
+      <input type="mail" [disabled]="!isChecked" [(ngModel)]="formData.mail"  name="mail" matInput placeholder="Ex. abc@example.com" >
+    </mat-form-field>
+  
+ 
+  </fieldset>
+
+  <button mat-button class="btn" style="color: aliceblue;">Submit</button> 
+  
+  
+</form>
+ 
+</div>
+

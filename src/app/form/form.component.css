@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 98vh;
+  padding: 2rem;
+}
+
+form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #dcf0e3;
+    border-radius: 8px;
+    animation: fadeIn 1s ease;
+    padding-top: 40px;
+}
+
+.btn {
+  margin-left: 40%;
+  margin-bottom: 20px;
+  width: 170px;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #673ab7, #be52dc);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #512da8, #be52dc);
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.number {
+  background-color: #7b1fa2;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+.employee, .profile1, .profile2, .dateandtime, .details, .contact{
+  display: flex;
+}
+
+.emp, .name,.terminal{
+  display: block;
+  padding-right: 40px;
+  width: 265px;
+}
+.emp{
+  margin-left: 20px;
+
+}
+
+.location, .reason, .status, .when, .equipment, .repair{
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 275px;
+  padding-left: 20px;
+}
+.date{
+  margin-left: 20px;
+  
+}
+.start, .end{
+  padding-left: 20px;
+  width: 235px;
+}
+.cause{
+  width: 95%;
+  padding-left: 20px;
+  
+}
+
+.check, .email{
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 260px;
+}
+fieldset {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-color: #6a1b9a;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.terminal, .name{
+  width: 270px;
+}
+.truck, .trailer, .load, .units{
+  width: 199px;
+  display: block;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.check{
+  padding-top: 17px;
+  padding-left: 20px;
+
+}
+
+.addbtn{
+  margin-left: 91%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #673ab7, #be52dc);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.deletebtn{
+  margin-left: 25px;
+  width: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+  height: 45px;
+  font-weight: bold;
+  color: white;
+  background: red;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* 
+@media screen and (max-width: 708px) {
+  .employee, .profile1, .profile2, .dateandtime, .details, .contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .name,.terminal, .email{
+    margin-left: 20px;
+  }
+  .btn, .addbtn {
+    margin-left: 0;
+    width: 100%;
+  }
+
+} */
+/* Responsive adjustments */
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .employee, .profile1, .profile2, .dateandtime, .details, .contact {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .emp{
+    width: 100%;
+    padding-right: 10px;
+  }
+  .name, .terminal,
+  .location, .reason, .status, .when, .equipment, .repair,
+  
+  .check, .email,
+  .truck, .trailer, .load, .units,
+  .cause {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-top: 10px;
+
+  }
+ 
+  .addbtn {
+    margin-left: 20px;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    max-width: 100px;
+  }
+
+  .deletebtn {
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px 10px;
+  }
+
+  legend {
+    font-size: 1.2em;
+  }
+
+  .btn {
+   margin: 20px auto;
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    padding-top: 10px;
+  }
+
+  .deletebtn {
+    margin-left: 20px;
+  }
+  .number {
+    font-size: 0.8em;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+   .endend, .startstart{
+    width: 116%;
+  }
+}
+

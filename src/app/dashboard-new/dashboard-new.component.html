@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color: rgb(11, 218, 149);">Map Load Builder</h2>
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="User profile">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+
+      <div class="content">
+        <div class="cards">
+          <div class="card" style="background-color: rgb(231, 75, 75); color: aliceblue;">
+
+            <div class="icon-case">
+              <mat-icon id="icon-cards">save_alt</mat-icon>
+            </div>
+            <div class="box">
+              <h3>Open Requests</h3>
+              <h1>11</h1>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(53, 70, 168); color: aliceblue;">
+
+            <div class="icon-case">
+              <i class="fa fa-truck" id="icon-cards"></i>
+            </div>
+            <div class="box">
+              <h3>Loads Needed</h3>
+              <h1>107</h1>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(61, 156, 109); color: aliceblue;">
+
+            <div class="icon-case">
+              <i class="fa fa-check" id="icon-cards"></i>
+            </div>
+            <div class="box">
+              <h3>Loads Built</h3>
+              <h1>0</h1>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(192, 98, 221); color: aliceblue;">
+
+            <div class="icon-case">
+              <i class="fa fa-car" id="icon-cards"></i>
+            </div>
+            <div class="box">
+              <h3>Units</h3>
+              <h1>13,870</h1>
+            </div>
+          </div>
+          <div class="card" style="background-color: rgb(202, 100, 59); color: aliceblue;">
+
+            <div class="icon-case">
+              <i class="fa fa-bookmark-o" id="icon-cards"></i>
+            </div>
+            <div class="box">
+              <h3>Missing Class</h3>
+              <h1>0</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</mat-drawer-container>

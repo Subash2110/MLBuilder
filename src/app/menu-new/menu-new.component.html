@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; ; text-align: center; color:rgb(11, 218, 149);">Map Load Builder</h2>
+
+    <div class="sidenav">
+
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+</mat-drawer-container>

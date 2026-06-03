@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="container">
+
+  <div class="left">
+    <div class="login-box">
+      <form [formGroup]="form" (ngSubmit)="signup()">
+        <h1>Sign Up</h1>
+
+        <p class="signup-text">Do have an account? <a href="/reactiveForm"><span style="font-weight: 800;">Log In</span></a></p>
+
+        <mat-form-field style="width: 100%;">
+            <mat-label>User Name</mat-label>
+            <input matInput formControlName="name" required>
+          </mat-form-field>
+
+        <mat-form-field style="width: 100%;">
+          <mat-label>Email ID</mat-label>
+          <input matInput type="email" name="email" formControlName="email" required />
+          <mat-error *ngIf="form.get('email')?.hasError('required')">
+            Email is required
+          </mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>New Password</mat-label>
+          <input matInput type="password" name="newPassword" formControlName="newPassword" required />
+          <mat-error *ngIf="form.get('newPassword')?.hasError('required')">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>Confirm Password</mat-label>
+          <input matInput type="password" name="confirmPassword" formControlName="confirmPassword" required />
+          <!-- <mat-error *ngIf="form.get('confirmPassword')?.hasError('required')">
+            Password is required
+          </mat-error> -->
+        </mat-form-field>
+
+        <div *ngIf="form.hasError('mismatch')" style="margin-bottom: 18px;">
+          <mat-error>Passwords do not match</mat-error>
+        </div>
+
+        <button type="submit" class="log">Sign Up</button>
+
+        <div class="separator">Or login with</div>
+
+        <button mat-raised-button class="btn" type="button"><i class="fa fa-google"></i> Google</button>
+        <button mat-raised-button class="btn" type="button"><i class="fa fa-facebook"></i> Facebook</button>
+
+      </form>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>

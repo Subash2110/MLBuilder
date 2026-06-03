@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.container {
+    background: 
+    url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8DqXCCcLiQLF5tavIe5DFirgxSwug8jR7w&s') 
+    no-repeat center center / cover;
+    margin: 10px auto;
+    padding: 70px 20px;
+    display: flex;
+    background-size: 200%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    animation: moveBackground 50s ease-in-out infinite;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 75%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.right {
+    flex: 1;
+    background: url('https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?semt=ais_country_boost&w=740') no-repeat center center/cover;
+    animation: slideBackground 20s ease infinite;
+    background-size: 90%; 
+    background-color: white;
+}
+
+/* Slide background animation */
+@keyframes slideBackground {
+    0% { background-position: left center; }
+    50% { background-position: right center; }
+    100% { background-position: left center; }
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.log {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #673ab7, #be52dc);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.log:hover {
+    background: linear-gradient(to right, #512da8, #be52dc);
+    transform: scale(1.05);
+    animation: pulse 1s infinite;
+}
+
+/* Pulse effect */
+@keyframes pulse {
+    0%, 100% { transform: scale(1.05); }
+    50% { transform: scale(1.1); }
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator:not(:empty)::before {
+    margin-right: 15px;
+}
+.separator:not(:empty)::after {
+    margin-left: 15px;
+}
+
+.psw {
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+    color: #512da8;
+    text-decoration: none;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1e0b8a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn{
+    margin: 20px;
+    padding: 20px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .right {
+        height: 200px;
+    }
+
+    .left {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .log {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,192 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="body">
+    <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+        <fieldset>
+            <legend><span class="number">1</span>Employee Details</legend>
+            <div class="employee">
+                <mat-form-field class="empNum">
+                    <mat-label>Employee Number</mat-label>
+                    <input matInput type="number" formControlName="empNumber">
+                </mat-form-field>
+
+                <mat-form-field class="empName">
+                    <mat-label>Employee Name</mat-label>
+                    <input matInput type="text" formControlName="empName">
+                </mat-form-field>
+
+                <mat-form-field class="terminal">
+                    <mat-label>Terminal ID</mat-label>
+                    <mat-select formControlName="terminal">
+                        <mat-option value="abc">ABC</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">2</span>Your Profile</legend>
+            <div>
+                <mat-form-field class="cause">
+                    <mat-label>Cause Code</mat-label>
+                    <mat-select formControlName="selectedCauseCode" (selectionChange)="onCauseCode($event.value)">
+                        <mat-option [value]="cause.key" *ngFor="let cause of causeCode">
+                            {{cause.itemName}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="profile1">
+
+                    <mat-form-field class="location" *ngIf="visibleFields.includes('location')">
+                        <mat-label>Loaction</mat-label>
+                        <mat-select formControlName="location">
+                            <mat-option [value]="location.key" *ngFor="let location of locationArray">
+                                {{location.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="reason" *ngIf="visibleFields.includes('reason109')">
+                        <mat-label>Reason</mat-label>
+                        <mat-select formControlName="reason109">
+                            <mat-option [value]="reason109.key" *ngFor="let reason109 of ReasonListPC109">
+                                {{reason109.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="reason" *ngIf="visibleFields.includes('reason111')">
+                        <mat-label>Reason</mat-label>
+                        <mat-select formControlName="reason111">
+                            <mat-option [value]="reason111.key" *ngFor="let reason111 of ReasonListPC111">
+                                {{reason111.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="reason" *ngIf="visibleFields.includes('reason115')">
+                        <mat-label>Reason</mat-label>
+                        <mat-select formControlName="reason115">
+                            <mat-option [value]="reason115.key" *ngFor="let reason115 of ReasonListPC115">
+                                {{reason115.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="status" *ngIf="visibleFields.includes('status')">
+                        <mat-label>Status</mat-label>
+                        <mat-select formControlName="status">
+                            <mat-option [value]="status.key" *ngFor="let status of statusArray">
+                                {{status.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="when" *ngIf="visibleFields.includes('when')">
+                        <mat-label>When</mat-label>
+                        <mat-select formControlName="when">
+                            <mat-option [value]="when.key" *ngFor="let when of whenArray">
+                                {{when.itemName}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+                <mat-form-field class="equipment" *ngIf="visibleFields.includes('equipment')">
+                    <mat-label>Equipment</mat-label>
+                    <mat-select formControlName="equipment">
+                        <mat-option [value]="equipment.key" *ngFor="let equipment of equipmentArray">
+                            {{equipment.itemName}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field class="repair" *ngIf="visibleFields.includes('repair')">
+                    <mat-label>Repair</mat-label>
+                    <mat-select formControlName="repair">
+                        <mat-option [value]="repair.key" *ngFor="let repair of repairArray">
+                            {{repair.itemName}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="number">3</span>Date & Time</legend>
+
+            <div formArrayName="dateFields" *ngIf="dateFields">
+                <div *ngFor="let group of dateFields.controls; let i = index" [formGroupName]="i" class="date-block">
+                    <mat-form-field class="date">
+                        <mat-label>Choose a Date</mat-label>
+                        <input matInput formControlName="date" [matDatepicker]="picker" (click)="picker.open()">
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="start">
+                        <mat-label>Start Time</mat-label>
+                        <input matInput formControlName="startTime" [ngxTimepicker]="startPicker">
+                        <ngx-material-timepicker #startPicker></ngx-material-timepicker>
+                    </mat-form-field>
+
+                    <mat-form-field class="end">
+                        <mat-label>End Time</mat-label>
+                        <input matInput formControlName="endTime" [ngxTimepicker]="endPicker">
+                        <ngx-material-timepicker #endPicker></ngx-material-timepicker>
+                    </mat-form-field>
+
+                    <button mat-icon-button class="deletebtn" (click)="deleteDateTimeField(i)"
+                        *ngIf="dateFields.length > 1">
+                        <i class="fa fa-trash-o" id="top-icon" style="font-size: 25px"></i>
+                    </button>
+                </div>
+            </div>
+            <div *ngIf="shouldShowAddButton()">
+                <button mat-raised-button color="accent" (click)="addDateTimeField()" [disabled]="!isAddButtonEnabled()"
+                    class="addbtn"> Add </button>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+            <legend><span class="number">4</span>Details</legend>
+            <div class="details">
+                <mat-form-field class="truck">
+                    <mat-label>Truck Number</mat-label>
+                    <input matInput type="number" formControlName="truck" placeholder="Enter 4 or 5 Digits">
+                </mat-form-field>
+
+                <mat-form-field class="trailer">
+                    <mat-label>Trailer Number</mat-label>
+                    <input matInput type="number" formControlName="trailer" placeholder="Enter 4 or 8 Digits">
+                </mat-form-field>
+
+                <mat-form-field class="load">
+                    <mat-label>Load Number</mat-label>
+                    <input matInput type="number" formControlName="load" placeholder="Must be 8 Digits">
+                </mat-form-field>
+
+                <mat-form-field class="units">
+                    <mat-label>Units Number</mat-label>
+                    <input matInput type="number" formControlName="units" placeholder="Enter Max 13 Digits">
+                </mat-form-field>
+            </div>
+        </fieldset>
+
+        <fieldset class="contact">
+            <legend><span class="number">5</span>Contact</legend>
+            <div class="check">
+                <mat-checkbox formControlName="terminalNotify">Terminal Notified</mat-checkbox>
+            </div>
+
+            <mat-form-field class="email">
+                <mat-label>Contact Email</mat-label>
+                <input matInput type="mail" formControlName="email">
+            </mat-form-field>
+        </fieldset>
+
+        <button mat-raised-button color="primary" class="btn" type="submit">Submit</button>
+    </form>
+</div>

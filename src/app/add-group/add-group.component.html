@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color: rgb(11, 218, 149);">Map Load Builder
+    </h2>
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="User profile">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+
+    <div class="example-sidenav-content">
+
+      <div class="selection">
+        <div class="select">
+
+          <mat-form-field appearance="fill" class="terminal">
+            <mat-label>Select Terminal</mat-label>
+            <mat-select [(ngModel)]="selectedTerminalId" (selectionChange)="onTerminalChange()" [disabled]="isEditMode">
+              <mat-option *ngFor="let terminal of terminals" [value]="terminal.terminal_id">
+                {{ terminal.terminal_id }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <fieldset>
+            <legend>Needed For</legend>
+            <mat-radio-group [(ngModel)]="selectedDay" [disabled]="isEditMode">
+              <mat-radio-button *ngFor="let day of days" [value]="day">{{ day }}</mat-radio-button>
+            </mat-radio-group>
+          </fieldset>
+
+        </div>
+
+        <div *ngIf="showFormFields" style="margin-top: 20px;">
+          <div *ngFor="let row of formRows; let i = index; let last = last">
+
+            <mat-form-field appearance="fill" class="showForm">
+              <mat-label>Load Type</mat-label>
+              <mat-select [(value)]="row.selectedLoadTypeId">
+                <mat-option *ngFor="let load of loadTypes" [value]="load.load_type"
+                  [disabled]="isLoadTypeSelected(load.load_type, i)">
+                  {{ load.load_type }}
+                </mat-option>
+
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="showForm">
+              <mat-label>No. of Loads</mat-label>
+              <input matInput type="number" [(ngModel)]="row.noOfLoads"
+                [disabled]="row.noOfDrivers !== null && row.noOfDrivers !== undefined"
+                placeholder="Enter 1 to 100 numbers" min="1" max="100" />
+              <mat-icon matSuffix class="maticon"> keyboard</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="showForm">
+              <mat-label>No. of Drivers</mat-label>
+              <input matInput type="number" [(ngModel)]="row.noOfDrivers"
+                [disabled]="row.noOfLoads !== null && row.noOfLoads !== undefined" placeholder="Enter 1 to 100 numbers"
+                min="1" max="100" />
+              <mat-icon matSuffix class="maticon"> keyboard</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" class="showForm">
+              <mat-label>Expected Delivery Date</mat-label>
+              <input matInput [matDatepicker]="picker" [(ngModel)]="row.expectedDeliveryDate"
+                [matDatepickerFilter]="dateFilter" />
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="showForm" id="note">
+              <mat-label>Notes</mat-label>
+              <input matInput [(ngModel)]="row.notes" rows="3">
+              <mat-icon matSuffix class="maticon"> assignment</mat-icon>
+            </mat-form-field>
+
+            <button mat-fab color="warn" class="delete" (click)="onDeleteRow(i)">
+              <mat-icon> delete</mat-icon>
+            </button>
+
+            <button mat-fab color="primary" *ngIf="last && !allLoadTypesSelected()" class="add" (click)="onAddRow()"
+              [disabled]="!isFormValid()">
+              <mat-icon>add</mat-icon>
+            </button>
+
+            <button mat-raised-button color="primary" *ngIf="last " (click)="onAdd()" class="submit">Submit</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-drawer-container>

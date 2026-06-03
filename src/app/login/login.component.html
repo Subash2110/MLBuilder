@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<div class="container">
+
+  <div class="left">
+    <div class="login-box">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h1>Login</h1>
+
+        <p class="signup-text">Don't have an account yet? <a href="/signup"><span style="font-weight: 800;">Sign Up</span></a></p>
+
+        <mat-form-field style="width: 100%;">
+          <mat-label>Email ID</mat-label>
+          <input matInput type="email" name="email" formControlName="email" required />
+          <mat-error *ngIf="form.get('email')?.hasError('required')">
+            Email is required
+          </mat-error>
+
+        </mat-form-field>
+
+        <a class="psw" style="font-weight: 700;" href="/forgot-password">Forgot Password?</a>
+
+        <mat-form-field appearance="fill" style="width: 100%;">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" formControlName="password" required />
+          <mat-error *ngIf="form.get('password')?.hasError('required')">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+
+        <div class="options">
+          <mat-checkbox>Remember me</mat-checkbox>
+        </div>
+
+        <button type="submit" cli class="log">Login</button>
+
+        <div class="separator">Or login with</div>
+
+
+        <button mat-raised-button class="btn" type="button"><i class="fa fa-google"></i> Google</button>
+        <button mat-raised-button class="btn" type="button"><i class="fa fa-facebook"></i> Facebook</button>
+
+      </form>
+    </div>
+  </div>
+  <div class="right"></div>
+</div>

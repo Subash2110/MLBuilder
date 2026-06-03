@@ -1,0 +1,173 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color: rgb(11, 218, 149);">
+      Map Load Builder
+    </h2>
+
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="User profile">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div *ngIf="groupedData.length > 0; else noData" class="response">
+      <table mat-table [dataSource]="groupedData" multiTemplateDataRows class="mat-elevation-z8" style="width: 100%;">
+
+        <ng-container matColumnDef="groupId">
+          <th mat-header-cell *matHeaderCellDef class="header" style="width: 20%;">Group ID</th>
+          <td mat-cell *matCellDef="let row">
+            <div class="grp">
+              <span>{{ row.groupId }}</span>
+              <button mat-icon-button (click)="toggleRow(row)">
+                <mat-icon>{{ expandedElement === row ? 'expand_less' : 'expand_more' }}</mat-icon>
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="selectedTerminalId">
+          <th mat-header-cell *matHeaderCellDef class="header" style="width: 30%;">Terminal ID</th>
+          <td mat-cell *matCellDef="let row">{{ row.selectedTerminalId }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="selectedDay">
+          <th mat-header-cell *matHeaderCellDef class="header" style="width: 25%;">Needed For</th>
+          <td mat-cell *matCellDef="let row">{{ row.selectedDay }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef class="header" style="width: 20%;">Action</th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button color="primary" (click)="onEdit(row)">
+              <mat-icon>edit</mat-icon>
+            </button>
+
+            <button mat-icon-button color="warn" (click)="onDelete(row.groupId)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedGroupColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedGroupColumns"></tr>
+
+        <ng-container matColumnDef="expandedDetail">
+          <td mat-cell *matCellDef="let row" [attr.colspan]="displayedGroupColumns.length" class="expanded-row-cell">
+            <table mat-table [dataSource]="row.loads" class="inner-table">
+
+              <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef class="header">ID</th>
+                <td mat-cell *matCellDef="let load">{{ load.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="selectedLoadTypeId">
+                <th mat-header-cell *matHeaderCellDef class="header">Load Type</th>
+                <td mat-cell *matCellDef="let load">{{ load.selectedLoadTypeId }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="noOfLoads">
+                <th mat-header-cell *matHeaderCellDef class="header">No. of Loads</th>
+                <td mat-cell *matCellDef="let load">{{ load.noOfLoads ?? '-' }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="noOfDrivers">
+                <th mat-header-cell *matHeaderCellDef class="header">No. of Drivers</th>
+                <td mat-cell *matCellDef="let load">{{ load.noOfDrivers ?? '-' }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="expectedDeliveryDate">
+                <th mat-header-cell *matHeaderCellDef class="header">Delivery Date</th>
+                <td mat-cell *matCellDef="let load">{{ load.expectedDeliveryDate | date }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="notes">
+                <th mat-header-cell *matHeaderCellDef class="header">Notes</th>
+                <td mat-cell *matCellDef="let load">{{ load.notes }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef="action">
+                <th mat-header-cell *matHeaderCellDef class="header">Action</th>
+                <td mat-cell *matCellDef="let load">
+                  <button mat-icon-button color="primary">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedLoadColumns"></tr>
+              <tr mat-row *matRowDef="let load; columns: displayedLoadColumns"></tr>
+            </table>
+          </td>
+        </ng-container>
+
+
+        <tr mat-row *matRowDef="let row; columns: ['expandedDetail']"
+          [style.display]="expandedElement === row ? 'table-row' : 'none'">
+        </tr>
+      </table>
+
+    </div>
+
+    <ng-template #noData>
+      <p style="margin-left: 10px;">No data submitted yet, Please add the Add Group Request</p>
+    </ng-template>
+  </div>
+
+</mat-drawer-container>

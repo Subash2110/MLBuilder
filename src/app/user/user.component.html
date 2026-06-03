@@ -1,0 +1,154 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color:rgb(11, 218, 149);">Map Load Builder
+    </h2>
+
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+
+    <div class="add">
+      <button mat-raised-button color="primary" (click)="showForm()">Add</button>
+    </div>
+
+    <div class="popup-form" *ngIf="formVisible">
+      <div class="login-box">
+        <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgb(5, 28, 92); text-align: center;">
+          {{ editMode ? 'Edit User' : 'Add User' }}
+        </h1>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+          <mat-form-field style="width: 100%;">
+            <mat-label>User Name</mat-label>
+            <input matInput formControlName="userName" required>
+          </mat-form-field>
+
+          <mat-form-field style="width: 100%;">
+            <mat-label>Email ID</mat-label>
+            <input matInput type="email" formControlName="email" required>
+          </mat-form-field>
+
+          <mat-form-field style="width: 100%;">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" formControlName="password">
+            <mat-error *ngIf="form.get('password')?.hasError('required')">
+              Password is required
+            </mat-error>
+          </mat-form-field>
+
+          <button class="logdel" (click)="closeForm()">Cancel</button>
+          <button type="submit" class="log">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="table">
+
+      <mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-class">
+
+        <ng-container matColumnDef="id">
+          <mat-header-cell *matHeaderCellDef> User ID </mat-header-cell>
+          <mat-cell *matCellDef="let user"> {{user.id}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="userName">
+          <mat-header-cell *matHeaderCellDef> User Name </mat-header-cell>
+          <mat-cell *matCellDef="let user"> {{user.userName}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+          <mat-header-cell *matHeaderCellDef> Email ID </mat-header-cell>
+          <mat-cell *matCellDef="let user"> {{user.email}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
+          <mat-cell *matCellDef="let user">
+            <button mat-mini-fab color="primary" style="margin: 20px;" (click)="showEditForm(user)">
+              <mat-icon class="edit">edit</mat-icon>
+            </button>
+            <button mat-mini-fab color="warn" (click)="openDeleteDialog(user.id)">
+              <mat-icon class="delete">delete</mat-icon>
+            </button>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+      </mat-table>
+
+      <ng-template #deleteDialog let-dialogRef="dialogRef">
+        <h2 style="text-align: center; color: rgb(5, 28, 92);">Confirm Delete</h2>
+        <mat-dialog-content>Are you sure you want to delete this user?</mat-dialog-content>
+        <mat-dialog-actions align="end">
+          <button class="addp" (click)="dialogRef.close(false)">No</button>
+          <button class="del" (click)="dialogRef.close(true)">Yes</button>
+        </mat-dialog-actions>
+      </ng-template>
+    </div>
+  </div>
+
+</mat-drawer-container>

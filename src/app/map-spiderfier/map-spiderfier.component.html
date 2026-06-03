@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color: rgb(11, 218, 149);">Map Load Builder</h2>
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="User profile">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a routerLink="/mapDealerNotice" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+    <div style="margin-left: 10px;">
+
+      <h1>Google Map</h1>
+
+      <div class="drop">
+        <mat-form-field>
+          <mat-label>Select Terminal ID</mat-label>
+          <mat-select [(ngModel)]="selectedTerminalId" (ngModelChange)="onTerminalChange()">
+            <mat-option *ngFor="let terminal of terminals" [value]="terminal.id">
+              {{ terminal.id }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <google-map #map height="755px" width="100%" [center]="center" [zoom]="3" (mapMousemove)="move($event)">
+        <map-marker *ngFor="let marker of markers; let i = index" [position]="marker.position"
+          (mapMouseover)="openInfo(markerRefList.get(i), i)" (mapMouseout)="closeInfoWindow()"
+          #markerRef="mapMarker"></map-marker>
+
+        <map-info-window>
+          <div [innerHtml]="selectedMarkerInfo"></div>
+          <map-info-window>{{ selectedMarkerInfo }}</map-info-window>
+        </map-info-window>
+      </google-map>
+
+      <div>Latitude: {{ display?.lat }}</div>
+      <div>Longitude: {{ display?.lng }}</div>
+
+    </div>
+  </div>
+
+</mat-drawer-container>

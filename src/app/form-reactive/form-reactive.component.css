@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 98vh;
+  padding: 2rem;
+}
+form {
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #e1dcf0;
+    border-radius: 15px;
+    animation: fadeIn 1s ease;
+    padding-top: 40px;
+}
+
+.number {
+  background-color: #1fa23b;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.employee, .profile1, .profile2, .dateandtime, .details, .contact{
+  display: flex;
+}
+
+.empNum, .empName,.terminal{
+  display: block;
+  padding-right: 40px;
+  width: 265px;
+}
+.empNum{
+  margin-left: 20px;
+}
+
+.location, .reason, .status, .when, .equipment, .repair{
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 266px;
+  padding-left: 10px;
+}
+.date{
+  margin-left: 20px;
+  
+}
+.start, .end{
+  padding-left: 20px;
+  width: 235px;
+}
+.cause{
+  width: 95%;
+  padding-left: 10px;
+}
+
+.check, .email{
+  padding-top: 10px;
+  padding-right: 20px;
+  width: 260px;
+}
+fieldset {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border-color: #6a1b9a;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.terminal, .name{
+  width: 270px;
+}
+.truck, .trailer, .load, .units{
+  width: 199px;
+  display: block;
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.check{
+  padding-top: 17px;
+  padding-left: 20px;
+
+}
+
+.btn {
+  margin: 20px auto;
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  padding: 15px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+}
+.addbtn{
+  margin-left: 91%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.deletebtn{
+  margin-left: 20px;
+  width: 50px;
+  font-weight: bold;
+  color: white;
+  background: red;
+  border-radius: 35px;
+  cursor: pointer;
+}

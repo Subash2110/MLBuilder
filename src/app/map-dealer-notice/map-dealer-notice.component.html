@@ -1,0 +1,163 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2 style="font-family: 'Courier New', monospace; text-align: center; color: rgb(11, 218, 149);">Map Load Builder</h2>
+    <div class="dash">
+      <img src="assets/erasebg-transformed.avif" alt="User profile">
+      <div class="text">
+        <h3>Welcome,</h3>
+        <h3>{{ userName }}</h3>
+      </div>
+    </div>
+
+    <div class="sidenav">
+      <a routerLink="/dashboardNew" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">home</mat-icon>
+        Dashboard
+      </a>
+      <a routerLink="/load" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">list</mat-icon>
+        Load Request List
+      </a>
+      <a routerLink="/addGroup" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">save_alt</mat-icon>
+        Add Group Request
+      </a>
+      <a routerLink="/mapClusterer" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">map</mat-icon>
+        Marker Clusterer Map
+      </a>
+      <a class="sidebar-item active" style="color: rgb(47, 192, 54); border-radius: 10px;">
+        <mat-icon id="icons">local_play</mat-icon>
+        Dealer Units Map
+      </a>
+      <a routerLink="/mapspiderfier" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">domain</mat-icon>
+        SpiderFier Map
+      </a>
+      <a routerLink="/mapPoly" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">my_location</mat-icon>
+        Map Poly
+      </a>
+      <a routerLink="/user" routerLinkActive="active" class="sidebar-item">
+        <mat-icon id="icons">groups</mat-icon>
+        Users
+      </a>
+    </div>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <nav>
+      <div class="top-bar">
+        <mat-icon id="top-icons" (click)="drawer.toggle()">menu</mat-icon>
+        <div class="username">
+          <mat-icon id="top-icon">notifications_none</mat-icon>
+          <h3>{{ userName }}</h3>
+          <mat-icon id="top-icon" (click)="logout()">power_settings_new</mat-icon>
+        </div>
+      </div>
+    </nav>
+    <div style="margin-left: 10px;">
+
+      <h1>Google Map</h1>
+
+      <div class="drop">
+        <mat-form-field>
+          <mat-label>Select Terminal ID</mat-label>
+          <mat-select [(ngModel)]="selectedTerminalId" (ngModelChange)="onTerminalChange()">
+            <mat-option *ngFor="let terminal of terminals" [value]="terminal.id">
+              {{ terminal.id }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <google-map #map height="790px" width="100%" [center]="center" [zoom]="8">
+
+        <map-marker *ngFor="let marker of markers; let i = index" [position]="marker.position" #markerRef="mapMarker"
+          [icon]="marker.iconUrl ? marker.iconUrl : undefined" (mapClick)="onMarkerClick(markerRef, i)"
+          (mapMouseover)="openInfo(markerRefList.toArray()[i], i)" (mapMouseout)="closeInfoWindow()">
+        </map-marker>
+
+        <map-info-window #infoWindow>
+          <div [innerHTML]="selectedMarkerInfo"></div>
+        </map-info-window>
+
+        <map-info-window *ngFor="let hoverInfo of hoverInfoWindows; let hi = index">
+          <div [innerHTML]="hoverInfo.content"></div>
+        </map-info-window>
+
+        <div class="unit-table" *ngIf="showTable && selectedCustomer">
+          <h2 class="table-header">Dealer Units</h2>
+          <div class="mat-table-wrapper">
+            <table mat-table [dataSource]="customerUnits" class="mat-elevation-z8">
+
+              <ng-container matColumnDef="Class">
+                <th mat-header-cell *matHeaderCellDef> Class </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.Class }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="age">
+                <th mat-header-cell *matHeaderCellDef> Age </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.age }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="customerCode">
+                <th mat-header-cell *matHeaderCellDef> Customer </th>
+                <td mat-cell *matCellDef="let unit"> {{ selectedCustomer.customerCode }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="city">
+                <th mat-header-cell *matHeaderCellDef> City </th>
+                <td mat-cell *matCellDef="let unit"> {{ selectedCustomer.city }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="vin">
+                <th mat-header-cell *matHeaderCellDef> VIN </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.vin }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="description">
+                <th mat-header-cell *matHeaderCellDef> DESC </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.description }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="lotCode">
+                <th mat-header-cell *matHeaderCellDef> Lot </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.lotCode }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="rowBay">
+                <th mat-header-cell *matHeaderCellDef> Row Bay </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.rowBay }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="wheelBase">
+                <th mat-header-cell *matHeaderCellDef> Wheel </th>
+                <td mat-cell *matCellDef="let unit"> {{ unit.wheelBase }} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="afterHour">
+                <th mat-header-cell *matHeaderCellDef> Call </th>
+                <td mat-cell *matCellDef="let unit"> {{ selectedCustomer.afterHour }} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            </table>
+          </div>
+        </div>
+
+
+      </google-map>
+
+
+
+    </div>
+  </div>
+
+</mat-drawer-container>
