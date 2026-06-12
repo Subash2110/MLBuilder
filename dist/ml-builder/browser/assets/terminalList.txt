@@ -1,0 +1,596 @@
+[
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/73",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/73/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 73,
+      "hash": "a",
+      "name": "NIAGARA",
+      "latitude": 43.127127,
+      "longitude": -79.023911
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/22",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/22/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 22,
+      "hash": "a",
+      "name": "CAMBRIDGE",
+      "latitude": 43.4229,
+      "longitude": -80.3675
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/23",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/23/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 23,
+      "hash": "a",
+      "name": "WOODSTOCK",
+      "latitude": 43.147,
+      "longitude": -80.69
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/26",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/26/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 26,
+      "hash": "a",
+      "name": "INGERSOLL",
+      "latitude": 43.00875,
+      "longitude": -80.8889
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/27",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/27/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 27,
+      "hash": "a",
+      "name": "OSHAWA",
+      "latitude": 43.8615,
+      "longitude": -78.871
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/76",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/76/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 76,
+      "hash": "a",
+      "name": "PHILADELPHIA",
+      "latitude": 39.891663,
+      "longitude": -75.157073
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/42",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/42/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 42,
+      "hash": "a",
+      "name": "LOUISVILLE",
+      "latitude": 38.1292904,
+      "longitude": -85.7163953
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/50",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/50/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 50,
+      "hash": "a",
+      "name": "DETROIT",
+      "latitude": 42.416241,
+      "longitude": -83.028191
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/30",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/30/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 30,
+      "hash": "a",
+      "name": "AURORA",
+      "latitude": 41.7664854,
+      "longitude": -88.2382273
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/20",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/20/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 20,
+      "hash": "a",
+      "name": "BELVIDERE",
+      "latitude": 42.242087,
+      "longitude": -88.877553
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/45",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/45/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 45,
+      "hash": "a",
+      "name": "CHICAGO HEIGHTS",
+      "latitude": 41.529201,
+      "longitude": -87.613994
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/48",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/48/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 48,
+      "hash": "a",
+      "name": "LAFAYETTE",
+      "latitude": 40.384193,
+      "longitude": -86.813723
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/51",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/51/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 51,
+      "hash": "a",
+      "name": "WINDSOR",
+      "latitude": 42.2929,
+      "longitude": -82.9761
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/55",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/55/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 55,
+      "hash": "a",
+      "name": "MARYSVILLE",
+      "latitude": 40.27567,
+      "longitude": -83.520419
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/57",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/57/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 57,
+      "hash": "a",
+      "name": "STERLING HEIGHTS",
+      "latitude": 42.5802615,
+      "longitude": -83.0340067
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/60",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/60/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 60,
+      "hash": "a",
+      "name": "TOLEDO",
+      "latitude": 41.707039,
+      "longitude": -83.530759
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/95",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/95/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 95,
+      "hash": "a",
+      "name": "SMYRNA",
+      "latitude": 35.9734979,
+      "longitude": -86.4857684
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/49",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/49/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 49,
+      "hash": "a",
+      "name": "PRINCETON",
+      "latitude": 38.294181,
+      "longitude": -87.5668541
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/79",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/79/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 79,
+      "hash": "a",
+      "name": "NEWARK",
+      "latitude": 40.71065,
+      "longitude": -74.15603
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/74",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/74/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 74,
+      "hash": "a",
+      "name": "ANNAPOLIS JCT",
+      "latitude": 39.1299459,
+      "longitude": -76.788112
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/46",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/46/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 46,
+      "hash": "a",
+      "name": "HAMTRAMCK",
+      "latitude": 42.3812561,
+      "longitude": -83.0357098
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/63",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/63/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 63,
+      "hash": "a",
+      "name": "BRAMPTON",
+      "latitude": 43.7496,
+      "longitude": -79.722
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/64",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/64/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 64,
+      "hash": "a",
+      "name": "LONDON",
+      "latitude": 42.92262,
+      "longitude": -81.18181
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/68",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/68/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 68,
+      "hash": "a",
+      "name": "LAKE ORION",
+      "latitude": 42.7083201,
+      "longitude": -83.2609763
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/69",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/69/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 69,
+      "hash": "a",
+      "name": "WARREN VDC",
+      "latitude": 41.142764,
+      "longitude": -80.858386
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/31",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/31/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 31,
+      "hash": "a",
+      "name": "HEGEWISCH",
+      "latitude": 41.6491833,
+      "longitude": -87.5592886
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/67",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/67/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 67,
+      "hash": "a",
+      "name": "OAKVILLE",
+      "latitude": 43.475821,
+      "longitude": -79.66944
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/70",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/70/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 70,
+      "hash": "a",
+      "name": "LORDSTOWN",
+      "latitude": 41.176,
+      "longitude": -80.8749
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/47",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/47/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 47,
+      "hash": "a",
+      "name": "GEORGETOWN",
+      "latitude": 38.271821,
+      "longitude": -84.535628
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/77",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/77/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 77,
+      "hash": "a",
+      "name": "PORT NEWARK",
+      "latitude": 40.69328,
+      "longitude": -74.12949
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/40",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/40/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 40,
+      "hash": "a",
+      "name": "FORT WAYNE",
+      "latitude": 40.9626922105,
+      "longitude": -85.3118537895
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/28",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/28/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 28,
+      "hash": "a",
+      "name": "ALLISTON",
+      "latitude": 44.1529289163,
+      "longitude": -79.8428499721
+    },
+    {
+      "lots": [],
+      "links": [
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/41",
+          "rel": "self"
+        },
+        {
+          "href": "https://dlb.cassens.com:4443/lb/api/terminals/41/lots",
+          "rel": "terminal-lots"
+        }
+      ],
+      "id": 41,
+      "hash": "a",
+      "name": "KENTUCKY TRUCK",
+      "latitude": 38.3017636169,
+      "longitude": -85.5365798996
+    }
+  ]

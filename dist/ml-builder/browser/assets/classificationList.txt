@@ -1,0 +1,618 @@
+[
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/G9",
+                    "rel": "self"
+                }
+            ],
+            "id": 17320522,
+            "class": "G9",
+            "description": "Class G9 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/C",
+                    "rel": "self"
+                }
+            ],
+            "id": 17770382,
+            "class": "C",
+            "description": "Class C  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/Q3",
+                    "rel": "self"
+                }
+            ],
+            "id": 45803901,
+            "class": "Q3",
+            "description": "Class Q3 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/I",
+                    "rel": "self"
+                }
+            ],
+            "id": 69153020,
+            "class": "I",
+            "description": "Class I  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/T",
+                    "rel": "self"
+                }
+            ],
+            "id": 76325656,
+            "class": "T",
+            "description": "Class T  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/DD",
+                    "rel": "self"
+                }
+            ],
+            "id": 76616712,
+            "class": "DD",
+            "description": "Class DD Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/H8",
+                    "rel": "self"
+                }
+            ],
+            "id": 241736173,
+            "class": "H8",
+            "description": "Class H8 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/I6",
+                    "rel": "self"
+                }
+            ],
+            "id": 255097429,
+            "class": "I6",
+            "description": "Class I6 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/Q5",
+                    "rel": "self"
+                }
+            ],
+            "id": 338080694,
+            "class": "Q5",
+            "description": "Class Q5 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/H6",
+                    "rel": "self"
+                }
+            ],
+            "id": 372198164,
+            "class": "H6",
+            "description": "Class H6 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/B",
+                    "rel": "self"
+                }
+            ],
+            "id": 403969743,
+            "class": "B",
+            "description": "Class B  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/H",
+                    "rel": "self"
+                }
+            ],
+            "id": 486801851,
+            "class": "H",
+            "description": "Class H  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/ED",
+                    "rel": "self"
+                }
+            ],
+            "id": 495592777,
+            "class": "ED",
+            "description": "Class ED Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/U",
+                    "rel": "self"
+                }
+            ],
+            "id": 496472665,
+            "class": "U",
+            "description": "Class U  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/NN",
+                    "rel": "self"
+                }
+            ],
+            "id": 514528668,
+            "class": "NN",
+            "description": "Class NN Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/HE",
+                    "rel": "self"
+                }
+            ],
+            "id": 551326830,
+            "class": "HE",
+            "description": "Class HE Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/FF",
+                    "rel": "self"
+                }
+            ],
+            "id": 660007002,
+            "class": "FF",
+            "description": "Class FF Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/CC",
+                    "rel": "self"
+                }
+            ],
+            "id": 709617812,
+            "class": "CC",
+            "description": "Class CC Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/J",
+                    "rel": "self"
+                }
+            ],
+            "id": 791831353,
+            "class": "J",
+            "description": "Class J  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/W",
+                    "rel": "self"
+                }
+            ],
+            "id": 799142107,
+            "class": "W",
+            "description": "Class W  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/N3",
+                    "rel": "self"
+                }
+            ],
+            "id": 807344157,
+            "class": "N3",
+            "description": "Class N3 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/II",
+                    "rel": "self"
+                }
+            ],
+            "id": 812771592,
+            "class": "II",
+            "description": "Class II Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/HG",
+                    "rel": "self"
+                }
+            ],
+            "id": 825035454,
+            "class": "HG",
+            "description": "Class HG Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/D3",
+                    "rel": "self"
+                }
+            ],
+            "id": 890179433,
+            "class": "D3",
+            "description": "Class D3 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/K",
+                    "rel": "self"
+                }
+            ],
+            "id": 908677754,
+            "class": "K",
+            "description": "Class K  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/V",
+                    "rel": "self"
+                }
+            ],
+            "id": 918208922,
+            "class": "V",
+            "description": "Class V  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/IE",
+                    "rel": "self"
+                }
+            ],
+            "id": 969385261,
+            "class": "IE",
+            "description": "Class IE Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/LH",
+                    "rel": "self"
+                }
+            ],
+            "id": 973155797,
+            "class": "LH",
+            "description": "Class LH Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/E8",
+                    "rel": "self"
+                }
+            ],
+            "id": 1144592478,
+            "class": "E8",
+            "description": "Class E8 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/D6",
+                    "rel": "self"
+                }
+            ],
+            "id": 1164311528,
+            "class": "D6",
+            "description": "Class D6 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/O4",
+                    "rel": "self"
+                }
+            ],
+            "id": 1218396929,
+            "class": "O4",
+            "description": "Class O4 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/N",
+                    "rel": "self"
+                }
+            ],
+            "id": 1264494141,
+            "class": "N",
+            "description": "Class N  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/S",
+                    "rel": "self"
+                }
+            ],
+            "id": 1271739871,
+            "class": "S",
+            "description": "Class S  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/D",
+                    "rel": "self"
+                }
+            ],
+            "id": 1313780041,
+            "class": "D",
+            "description": "Class D  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/N4",
+                    "rel": "self"
+                }
+            ],
+            "id": 1367634498,
+            "class": "N4",
+            "description": "Class N4 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/O",
+                    "rel": "self"
+                }
+            ],
+            "id": 1380292478,
+            "class": "O",
+            "description": "Class O  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/E",
+                    "rel": "self"
+                }
+            ],
+            "id": 1465221128,
+            "class": "E",
+            "description": "Class E  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/ZE",
+                    "rel": "self"
+                }
+            ],
+            "id": 1479075007,
+            "class": "ZE",
+            "description": "Class ZE Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/D8",
+                    "rel": "self"
+                }
+            ],
+            "id": 1562519839,
+            "class": "D8",
+            "description": "Class D8 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/HH",
+                    "rel": "self"
+                }
+            ],
+            "id": 1584261329,
+            "class": "HH",
+            "description": "Class HH Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/M",
+                    "rel": "self"
+                }
+            ],
+            "id": 1618212352,
+            "class": "M",
+            "description": "Class M  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/P",
+                    "rel": "self"
+                }
+            ],
+            "id": 1625318940,
+            "class": "P",
+            "description": "Class P  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/H7",
+                    "rel": "self"
+                }
+            ],
+            "id": 1630043010,
+            "class": "H7",
+            "description": "Class H7 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/EI",
+                    "rel": "self"
+                }
+            ],
+            "id": 1664834036,
+            "class": "EI",
+            "description": "Class EI Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/G",
+                    "rel": "self"
+                }
+            ],
+            "id": 1701044874,
+            "class": "G",
+            "description": "Class G  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/EE",
+                    "rel": "self"
+                }
+            ],
+            "id": 1787631071,
+            "class": "EE",
+            "description": "Class EE Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/G6",
+                    "rel": "self"
+                }
+            ],
+            "id": 1850255397,
+            "class": "G6",
+            "description": "Class G6 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/VV",
+                    "rel": "self"
+                }
+            ],
+            "id": 1881401965,
+            "class": "VV",
+            "description": "Class VV Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/OO",
+                    "rel": "self"
+                }
+            ],
+            "id": 1891046475,
+            "class": "OO",
+            "description": "Class OO Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/H5",
+                    "rel": "self"
+                }
+            ],
+            "id": 1893328210,
+            "class": "H5",
+            "description": "Class H5 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/G8",
+                    "rel": "self"
+                }
+            ],
+            "id": 1980725980,
+            "class": "G8",
+            "description": "Class G8 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/F6",
+                    "rel": "self"
+                }
+            ],
+            "id": 2001967462,
+            "class": "F6",
+            "description": "Class F6 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/I7",
+                    "rel": "self"
+                }
+            ],
+            "id": 2016627395,
+            "class": "I7",
+            "description": "Class I7 Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/L",
+                    "rel": "self"
+                }
+            ],
+            "id": 2036909247,
+            "class": "L",
+            "description": "Class L  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/Q",
+                    "rel": "self"
+                }
+            ],
+            "id": 2046515037,
+            "class": "Q",
+            "description": "Class Q  Description"
+        },
+        {
+            "links": [
+                {
+                    "href": "https://dlb.cassens.com:4443/lb/api/classifications/F",
+                    "rel": "self"
+                }
+            ],
+            "id": 2088293323,
+            "class": "F",
+            "description": "Class F  Description"
+        }
+    ]
