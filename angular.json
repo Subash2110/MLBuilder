@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sm_dashboard_app": {
+    "ml-builder": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "dist/sm_dashboard_app"
+              "base": "dist/ml-builder"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "sm_dashboard_app:build:production"
+              "buildTarget": "ml-builder:build:production"
             },
             "development": {
-              "buildTarget": "sm_dashboard_app:build:development"
+              "buildTarget": "ml-builder:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular/build:extract-i18n",
           "options": {
-            "buildTarget": "sm_dashboard_app:build"
+            "buildTarget": "ml-builder:build"
           }
         },
         "test": {

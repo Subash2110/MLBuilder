@@ -1,0 +1,162 @@
+{
+  "data": [
+    {
+      "terminal_id": 30,
+      "associated_terminal": null,
+      "load_types": [
+        {
+          "id": 1,
+          "load_type": "City Loads",
+          "lots": []
+        },
+        {
+          "id": 2,
+          "load_type": "Road Loads - 1 Day To rs (200 Miles Or Less)",
+          "lots": []
+        },
+        {
+          "id": 3,
+          "load_type": "Road Loads - Longer Roads To Go W/City",
+          "lots": []
+        },
+        {
+          "id": 4,
+          "load_type": "2 Shift Loads - West Chicago Day Shift",
+          "lots": [
+            "wL"
+          ]
+        },
+        {
+          "id": 5,
+          "load_type": "2 Shift Loads - West Chicago Night Shift (200 Miles Or Less)",
+          "lots": [
+            "wL"
+          ]
+        },
+        {
+          "id": 6,
+          "load_type": "2 Shift Loads - Elwood Day Shift",
+          "lots": [
+            "EL"
+          ]
+        },
+        {
+          "id": 7,
+          "load_type": "2 Shift Loads - Elwood Night Shift (200 Miles Or Less)",
+          "lots": [
+            "EL"
+          ]
+        },
+        {
+          "id": 8,
+          "load_type": "Shuttle Loads To Terminal",
+          "lots": []
+        },
+        {
+          "id": 9,
+          "load_type": "3 Way To Terminal",
+          "lots": []
+        },
+        {
+          "id": 10,
+          "load_type": "Overflow Loads To Terminal",
+          "lots": []
+        }
+      ]
+    },
+    {
+      "terminal_id": 69,
+      "associated_terminal": null,
+      "load_types": [
+        {
+          "id": 10,
+          "load_type": "Overflow Loads To Terminal",
+          "lots": []
+        },
+        {
+          "id": 11,
+          "load_type": "Short Loads (Under 70 Miles)",
+          "lots": []
+        },
+        {
+          "id": 12,
+          "load_type": "Day Run Loads (Around 200 Miles)",
+          "lots": []
+        },
+        {
+          "id": 13,
+          "load_type": "NY Loads",
+          "lots": []
+        },
+        {
+          "id": 14,
+          "load_type": "East Loads",
+          "lots": []
+        },
+        {
+          "id": 15,
+          "load_type": "South Loads",
+          "lots": []
+        },
+        {
+          "id": 16,
+          "load_type": "MI Loads",
+          "lots": []
+        },
+        {
+          "id": 17,
+          "load_type": "2PM Loads",
+          "lots": []
+        }
+      ]
+    },
+    {
+      "terminal_id": 50,
+      "associated_terminal": null,
+      "load_types": [
+        {
+          "id": 10,
+          "load_type": "Overflow Loads To Terminal",
+          "lots": []
+        },
+        {
+          "id": 19,
+          "load_type": "Canada Zone-2 STI Loads",
+          "lots": []
+        },
+        {
+          "id": 20,
+          "load_type": "Canada Zone-2 Non-STI Loads",
+          "lots": []
+        },
+        {
+          "id": 22,
+          "load_type": "US Conner Lot Loads",
+          "lots": []
+        },
+        {
+          "id": 23,
+          "load_type": "US Flat Rock Lot Loads",
+          "lots": []
+        },
+        {
+          "id": 24,
+          "load_type": "US River Lot Loads",
+          "lots": []
+        },
+        {
+          "id": 25,
+          "load_type": "US Woodhaven Lot Loads",
+          "lots": []
+        },
+        {
+          "id": 26,
+          "load_type": "US Lake Orion ZU Lot Loads",
+          "lots": []
+        }
+      ]
+    }
+  ],
+  "message": "Load Types retrieved",
+  "type": "success"
+}

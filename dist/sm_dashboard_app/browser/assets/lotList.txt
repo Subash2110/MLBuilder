@@ -1,0 +1,1582 @@
+[
+    {
+      "links": [],
+      "id": 519,
+      "code": "YP",
+      "terminalId": 50,
+      "name": "Ypsi Yard",
+      "splc": "318430000",
+      "latDeg": 42.233714156,
+      "longDeg": -83.6094132798
+    },
+    {
+      "links": [],
+      "id": 53,
+      "code": "CL",
+      "terminalId": 20,
+      "name": "CASSENS LOT",
+      "splc": "382571000",
+      "latDeg": 42.2414103826,
+      "longDeg": -88.8793887067
+    },
+    {
+      "links": [],
+      "id": 62,
+      "code": "RE",
+      "terminalId": 20,
+      "name": "RELEASING LOT",
+      "splc": "382571000",
+      "latDeg": 42.2413782792,
+      "longDeg": -88.879304617
+    },
+    {
+      "links": [],
+      "id": 70,
+      "code": "CM",
+      "terminalId": 22,
+      "name": "CM LOT",
+      "splc": "043010000",
+      "latDeg": 43.425260199,
+      "longDeg": -80.3677597015
+    },
+    {
+      "links": [],
+      "id": 72,
+      "code": "WS",
+      "terminalId": 23,
+      "name": "WS LOT",
+      "splc": "043242000",
+      "latDeg": 43.1474867978,
+      "longDeg": -80.6857716292
+    },
+    {
+      "links": [],
+      "id": 76,
+      "code": "IL",
+      "terminalId": 26,
+      "name": "INGERSOLL LOT",
+      "splc": "043218000",
+      "latDeg": 43.0076976949,
+      "longDeg": -80.8883118551
+    },
+    {
+      "links": [],
+      "id": 78,
+      "code": "KE",
+      "terminalId": 27,
+      "name": "KE LOT",
+      "splc": "041814000",
+      "latDeg": 43.8853217949,
+      "longDeg": -78.830326923
+    },
+    {
+      "links": [],
+      "id": 79,
+      "code": "OL",
+      "terminalId": 27,
+      "name": "OSHAWA LOT",
+      "splc": "041814000",
+      "latDeg": 43.7489,
+      "longDeg": -79.7238
+    },
+    {
+      "links": [],
+      "id": 80,
+      "code": "AR",
+      "terminalId": 30,
+      "name": "AURORA LOT",
+      "splc": "382480000",
+      "latDeg": 41.7933,
+      "longDeg": -88.0554857143
+    },
+    {
+      "links": [],
+      "id": 85,
+      "code": "EL",
+      "terminalId": 30,
+      "name": "ELWOOD LOGISTICS PK",
+      "splc": "384186000",
+      "latDeg": 41.3951375,
+      "longDeg": -88.158
+    },
+    {
+      "links": [],
+      "id": 88,
+      "code": "HL",
+      "terminalId": 30,
+      "name": "HEGEWISCH LOT",
+      "splc": "380680000",
+      "latDeg": 41.6493875,
+      "longDeg": -87.5554041667
+    },
+    {
+      "links": [],
+      "id": 90,
+      "code": "ML",
+      "terminalId": 30,
+      "name": "MAZDA LOT",
+      "splc": "362120000",
+      "latDeg": 41.8010615385,
+      "longDeg": -88.3721153846
+    },
+    {
+      "links": [],
+      "id": 91,
+      "code": "NL",
+      "terminalId": 30,
+      "name": "NAPERVILLE LOT",
+      "splc": "382262000",
+      "latDeg": 41.8804434783,
+      "longDeg": -88.2393173913
+    },
+    {
+      "links": [],
+      "id": 92,
+      "code": "SL",
+      "terminalId": 30,
+      "name": "NAPERVILLE STORAGE",
+      "splc": "362120000",
+      "latDeg": 41.5719661765,
+      "longDeg": -87.7842985294
+    },
+    {
+      "links": [],
+      "id": 93,
+      "code": "WL",
+      "terminalId": 30,
+      "name": "WEST CHICAGO LOT",
+      "splc": "382262000",
+      "latDeg": 41.8805850959,
+      "longDeg": -88.2409002055
+    },
+    {
+      "links": [],
+      "id": 94,
+      "code": "07",
+      "terminalId": 31,
+      "name": "HEGEWISCH LOT 07",
+      "splc": "380680000",
+      "latDeg": 41.673626,
+      "longDeg": -87.572376
+    },
+    {
+      "links": [],
+      "id": 96,
+      "code": "CL",
+      "terminalId": 31,
+      "name": "CEC LOT",
+      "splc": "319462000",
+      "latDeg": 42.224184,
+      "longDeg": -85.787106
+    },
+    {
+      "links": [],
+      "id": 98,
+      "code": "HL",
+      "terminalId": 31,
+      "name": "HEGEWISCH LOT",
+      "splc": "380680000",
+      "latDeg": 41.6623,
+      "longDeg": -87.5589
+    },
+    {
+      "links": [],
+      "id": 100,
+      "code": "SI",
+      "terminalId": 31,
+      "name": "STONEY ISLAND",
+      "splc": "380680000",
+      "latDeg": 41.670628558,
+      "longDeg": -87.5695574608
+    },
+    {
+      "links": [],
+      "id": 126,
+      "code": "RO",
+      "terminalId": 40,
+      "name": "FT WAYNE",
+      "splc": "365115000",
+      "latDeg": 40.9626922105,
+      "longDeg": -85.3118537895
+    },
+    {
+      "links": [],
+      "id": 128,
+      "code": "L2",
+      "terminalId": 42,
+      "name": "LOUISVILLE - NEW BUS",
+      "splc": "286550000",
+      "latDeg": 38.1281920873,
+      "longDeg": -85.7132140519
+    },
+    {
+      "links": [],
+      "id": 130,
+      "code": "LV",
+      "terminalId": 42,
+      "name": "LOUISVILLE",
+      "splc": "286550000",
+      "latDeg": 38.128417757,
+      "longDeg": -85.7131953272
+    },
+    {
+      "links": [],
+      "id": 137,
+      "code": "CH",
+      "terminalId": 45,
+      "name": "CHGO HEIGHTS LOT",
+      "splc": "381474000",
+      "latDeg": 41.529201,
+      "longDeg": -87.613994
+    },
+    {
+      "links": [],
+      "id": 146,
+      "code": "GT",
+      "terminalId": 47,
+      "name": "GEORGETOWN LOT",
+      "splc": "285582000",
+      "latDeg": 38.2673588134,
+      "longDeg": -84.5358068049
+    },
+    {
+      "links": [],
+      "id": 148,
+      "code": "04",
+      "terminalId": 48,
+      "name": "LAFAYETTE ON HOLD",
+      "splc": "369168000",
+      "latDeg": 40.3834992,
+      "longDeg": -86.813
+    },
+    {
+      "links": [],
+      "id": 150,
+      "code": "07",
+      "terminalId": 48,
+      "name": "LAFAYETTE ON HOLD",
+      "splc": "369168000",
+      "latDeg": 40.3834911371,
+      "longDeg": -86.8129967056
+    },
+    {
+      "links": [],
+      "id": 159,
+      "code": "LF",
+      "terminalId": 48,
+      "name": "LAFAYETTE LOT",
+      "splc": "369168000",
+      "latDeg": 40.383575,
+      "longDeg": -86.812975
+    },
+    {
+      "links": [],
+      "id": 165,
+      "code": "PR",
+      "terminalId": 49,
+      "name": "",
+      "splc": "379130000",
+      "latDeg": 38.2997096607,
+      "longDeg": -87.5634466656
+    },
+    {
+      "links": [],
+      "id": 166,
+      "code": "4G",
+      "terminalId": 50,
+      "name": "MAP Wayne",
+      "splc": "318360000",
+      "latDeg": 42.2796111111,
+      "longDeg": -83.4004873016
+    },
+    {
+      "links": [],
+      "id": 168,
+      "code": "AD",
+      "terminalId": 50,
+      "name": "Bellville",
+      "splc": "318375000",
+      "latDeg": 42.26215,
+      "longDeg": -83.485
+    },
+    {
+      "links": [],
+      "id": 172,
+      "code": "BC",
+      "terminalId": 50,
+      "name": "BC LOT",
+      "splc": "318100718",
+      "latDeg": 42.3763,
+      "longDeg": -83.2918
+    },
+    {
+      "links": [],
+      "id": 174,
+      "code": "BL",
+      "terminalId": 50,
+      "name": "BUD YARD",
+      "splc": "318100150",
+      "latDeg": 42.3812558824,
+      "longDeg": -82.968267647
+    },
+    {
+      "links": [],
+      "id": 176,
+      "code": "CL",
+      "terminalId": 50,
+      "name": "CONNER LOT",
+      "splc": "318100718",
+      "latDeg": 42.3724664581,
+      "longDeg": -82.959319109
+    },
+    {
+      "links": [],
+      "id": 178,
+      "code": "DA",
+      "terminalId": 50,
+      "name": "Detroit Axle",
+      "splc": "318100750",
+      "latDeg": 42.4038700993,
+      "longDeg": -83.0293204715
+    },
+    {
+      "links": [],
+      "id": 179,
+      "code": "DB",
+      "terminalId": 50,
+      "name": "Dearborn DTP",
+      "splc": "318200000",
+      "latDeg": 42.3161109312,
+      "longDeg": -83.1648554656
+    },
+    {
+      "links": [],
+      "id": 182,
+      "code": "EL",
+      "terminalId": 50,
+      "name": "ELDON AVE LOT",
+      "splc": "318100709",
+      "latDeg": 42.4150269461,
+      "longDeg": -83.0287185629
+    },
+    {
+      "links": [],
+      "id": 184,
+      "code": "FL",
+      "terminalId": 50,
+      "name": "FREUD",
+      "splc": "318100723",
+      "latDeg": 42.36732,
+      "longDeg": -82.98733
+    },
+    {
+      "links": [],
+      "id": 185,
+      "code": "FR",
+      "terminalId": 50,
+      "name": "FLAT ROCK LOT",
+      "splc": "318384000",
+      "latDeg": 42.1098729027,
+      "longDeg": -83.2542554243
+    },
+    {
+      "links": [],
+      "id": 198,
+      "code": "JL",
+      "terminalId": 50,
+      "name": "JEFFERSON LOT",
+      "splc": "318100301",
+      "latDeg": 42.3772687772,
+      "longDeg": -82.975538542
+    },
+    {
+      "links": [],
+      "id": 203,
+      "code": "MI",
+      "terminalId": 50,
+      "name": "MILAN LOT",
+      "splc": "318100730",
+      "latDeg": 42.444387,
+      "longDeg": -83.041443
+    },
+    {
+      "links": [],
+      "id": 212,
+      "code": "SH",
+      "terminalId": 50,
+      "name": "STERLING HEIGHTS",
+      "splc": "315859709",
+      "latDeg": 42.579617,
+      "longDeg": -83.035367
+    },
+    {
+      "links": [],
+      "id": 213,
+      "code": "SL",
+      "terminalId": 50,
+      "name": "STATE FAIR",
+      "splc": "315859709",
+      "latDeg": 42.57962,
+      "longDeg": -83.0354
+    },
+    {
+      "links": [],
+      "id": 217,
+      "code": "TL",
+      "terminalId": 50,
+      "name": "TAYLOR LOT",
+      "splc": "318354050",
+      "latDeg": 42.197791,
+      "longDeg": -83.231423
+    },
+    {
+      "links": [],
+      "id": 221,
+      "code": "WN",
+      "terminalId": 50,
+      "name": "WN LOT",
+      "splc": "318381000",
+      "latDeg": 42.153465,
+      "longDeg": -83.252872
+    },
+    {
+      "links": [],
+      "id": 513,
+      "code": "CR",
+      "terminalId": 64,
+      "name": "CONCORD LOT",
+      "splc": "041924000",
+      "latDeg": 43.803179,
+      "longDeg": -79.519223
+    },
+    {
+      "links": [],
+      "id": 514,
+      "code": "SM",
+      "terminalId": 31,
+      "name": "STEEL MILL",
+      "splc": "380279000",
+      "latDeg": 41.69107,
+      "longDeg": -87.5482
+    },
+    {
+      "links": [],
+      "id": 515,
+      "code": "BO",
+      "terminalId": 50,
+      "name": "BORMAN",
+      "splc": "318100000",
+      "latDeg": 42.37757,
+      "longDeg": -83.2176
+    },
+    {
+      "links": [],
+      "id": 516,
+      "code": "WP",
+      "terminalId": 41,
+      "name": "WEST PORT YARD",
+      "splc": "286545000",
+      "latDeg": 38.3017636169,
+      "longDeg": -85.5365798996
+    },
+    {
+      "links": [],
+      "id": 518,
+      "code": "FP",
+      "terminalId": 50,
+      "name": "FPTROY Lot",
+      "splc": "315961000",
+      "latDeg": 42.5496,
+      "longDeg": -83.1264
+    },
+    {
+      "links": [],
+      "id": 520,
+      "code": "SM",
+      "terminalId": 41,
+      "name": "Mixing Center",
+      "splc": "286320000",
+      "latDeg": 38.2062347214,
+      "longDeg": -85.2946701
+    },
+    {
+      "links": [],
+      "id": 521,
+      "code": "SW",
+      "terminalId": 41,
+      "name": "SPEEDWAY YARD",
+      "splc": "283584000",
+      "latDeg": 38.7107,
+      "longDeg": -84.9157
+    },
+    {
+      "links": [],
+      "id": 522,
+      "code": "BI",
+      "terminalId": 41,
+      "name": "BISHOP YARD",
+      "splc": "286550000",
+      "latDeg": 38.18699,
+      "longDeg": -85.695428
+    },
+    {
+      "links": [],
+      "id": 238,
+      "code": "FX",
+      "terminalId": 51,
+      "name": "GFX LOT",
+      "splc": "043739510",
+      "latDeg": 42.287373,
+      "longDeg": -82.983504
+    },
+    {
+      "links": [],
+      "id": 239,
+      "code": "GA",
+      "terminalId": 51,
+      "name": "GENAUTO GM LOT WNDSR",
+      "splc": "043739000",
+      "latDeg": 42.292675,
+      "longDeg": -82.974422
+    },
+    {
+      "links": [],
+      "id": 241,
+      "code": "GM",
+      "terminalId": 51,
+      "name": "GRAND MARAIS LOT",
+      "splc": "043739745",
+      "latDeg": 42.2925316299,
+      "longDeg": -82.9750811878
+    },
+    {
+      "links": [],
+      "id": 243,
+      "code": "MP",
+      "terminalId": 51,
+      "name": "MOTIPARK LOT",
+      "splc": "043739110",
+      "latDeg": 42.299,
+      "longDeg": -82.9892692308
+    },
+    {
+      "links": [],
+      "id": 248,
+      "code": "WR",
+      "terminalId": 51,
+      "name": "WALKER ROAD",
+      "splc": "043739302",
+      "latDeg": 42.29924375,
+      "longDeg": -82.9900125001
+    },
+    {
+      "links": [],
+      "id": 254,
+      "code": "50",
+      "terminalId": 55,
+      "name": "Lot 50",
+      "splc": "349155720",
+      "latDeg": 40.3281753463,
+      "longDeg": -83.5396224377
+    },
+    {
+      "links": [],
+      "id": 255,
+      "code": "51",
+      "terminalId": 55,
+      "name": "Lot 51",
+      "splc": "349155720",
+      "latDeg": 40.3281850468,
+      "longDeg": -83.5396130841
+    },
+    {
+      "links": [],
+      "id": 257,
+      "code": "53",
+      "terminalId": 55,
+      "name": "Lot 53",
+      "splc": "348960770",
+      "latDeg": 40.3279787129,
+      "longDeg": -83.5400574258
+    },
+    {
+      "links": [],
+      "id": 258,
+      "code": "54",
+      "terminalId": 55,
+      "name": "LOT 540",
+      "splc": "348960770",
+      "latDeg": 40.2793806452,
+      "longDeg": -83.5187774193
+    },
+    {
+      "links": [],
+      "id": 259,
+      "code": "60",
+      "terminalId": 55,
+      "name": "LOT 603",
+      "splc": "349155720",
+      "latDeg": 40.3279743444,
+      "longDeg": -83.5400242874
+    },
+    {
+      "links": [],
+      "id": 260,
+      "code": "61",
+      "terminalId": 55,
+      "name": "Lot 61",
+      "splc": "349155720",
+      "latDeg": 40.3277969219,
+      "longDeg": -83.540408603
+    },
+    {
+      "links": [],
+      "id": 261,
+      "code": "62",
+      "terminalId": 55,
+      "name": "LOT 62",
+      "splc": "348960770",
+      "latDeg": 40.3275192091,
+      "longDeg": -83.5409631228
+    },
+    {
+      "links": [],
+      "id": 262,
+      "code": "63",
+      "terminalId": 55,
+      "name": "Lot 63",
+      "splc": "348960770",
+      "latDeg": 40.3275166387,
+      "longDeg": -83.5409652101
+    },
+    {
+      "links": [],
+      "id": 263,
+      "code": "64",
+      "terminalId": 55,
+      "name": "LOT 641",
+      "splc": "348960770",
+      "latDeg": 40.3278291263,
+      "longDeg": -83.5403446602
+    },
+    {
+      "links": [],
+      "id": 264,
+      "code": "65",
+      "terminalId": 55,
+      "name": "Lot 65",
+      "splc": "349155720",
+      "latDeg": 40.3275491228,
+      "longDeg": -83.5408964913
+    },
+    {
+      "links": [],
+      "id": 265,
+      "code": "66",
+      "terminalId": 55,
+      "name": "LOT 66",
+      "splc": "348960770",
+      "latDeg": 40.32754,
+      "longDeg": -83.5409141936
+    },
+    {
+      "links": [],
+      "id": 267,
+      "code": "71",
+      "terminalId": 55,
+      "name": "LOT 71",
+      "splc": "349155720",
+      "latDeg": 40.327553125,
+      "longDeg": -83.5409020834
+    },
+    {
+      "links": [],
+      "id": 268,
+      "code": "72",
+      "terminalId": 55,
+      "name": "LOT 72",
+      "splc": "349155720",
+      "latDeg": 40.3278375,
+      "longDeg": -83.5402604167
+    },
+    {
+      "links": [],
+      "id": 269,
+      "code": "73",
+      "terminalId": 55,
+      "name": "LOT 73",
+      "splc": "349155720",
+      "latDeg": 40.3281416667,
+      "longDeg": -83.5396854167
+    },
+    {
+      "links": [],
+      "id": 275,
+      "code": "CL",
+      "terminalId": 55,
+      "name": "CASSENS LOT",
+      "splc": "348960770",
+      "latDeg": 40.2589971429,
+      "longDeg": -83.4595428571
+    },
+    {
+      "links": [],
+      "id": 278,
+      "code": "MA",
+      "terminalId": 55,
+      "name": "MARION, OHIO",
+      "splc": "348540000",
+      "latDeg": 40.6021786325,
+      "longDeg": -83.0548726496
+    },
+    {
+      "links": [],
+      "id": 296,
+      "code": "SH",
+      "terminalId": 57,
+      "name": "STERLING YARD",
+      "splc": "315859304",
+      "latDeg": 42.5776313726,
+      "longDeg": -83.0366676471
+    },
+    {
+      "links": [],
+      "id": 303,
+      "code": "GB",
+      "terminalId": 59,
+      "name": "GB LOT",
+      "splc": "315652000",
+      "latDeg": 42.9350875,
+      "longDeg": -83.6444375
+    },
+    {
+      "links": [],
+      "id": 313,
+      "code": "BL",
+      "terminalId": 60,
+      "name": "STICKNEY LOT INBOUND",
+      "splc": "343100701",
+      "latDeg": 41.6988950001,
+      "longDeg": -83.52428
+    },
+    {
+      "links": [],
+      "id": 315,
+      "code": "CP",
+      "terminalId": 60,
+      "name": "STICKNEY LOT COMP LA",
+      "splc": "343100701",
+      "latDeg": 41.6988823864,
+      "longDeg": -83.52420625
+    },
+    {
+      "links": [],
+      "id": 317,
+      "code": "DK",
+      "terminalId": 60,
+      "name": "STICKNEY LOT DOCK LA",
+      "splc": "343100701",
+      "latDeg": 41.69699,
+      "longDeg": -83.5272
+    },
+    {
+      "links": [],
+      "id": 319,
+      "code": "DS",
+      "terminalId": 60,
+      "name": "DEAD STORE",
+      "splc": "343100701",
+      "latDeg": 41.698925,
+      "longDeg": -83.524825
+    },
+    {
+      "links": [],
+      "id": 321,
+      "code": "EL",
+      "terminalId": 60,
+      "name": "AIRPORT LOT",
+      "splc": "362120000",
+      "latDeg": 42.2977413044,
+      "longDeg": -83.2691
+    },
+    {
+      "links": [],
+      "id": 326,
+      "code": "IG",
+      "terminalId": 60,
+      "name": "INGATE",
+      "splc": "343100301",
+      "latDeg": 41.69699,
+      "longDeg": -83.5272
+    },
+    {
+      "links": [],
+      "id": 327,
+      "code": "ML",
+      "terminalId": 60,
+      "name": "MATZINGER LOT",
+      "splc": "343100701",
+      "latDeg": 41.6988793403,
+      "longDeg": -83.5247081597
+    },
+    {
+      "links": [],
+      "id": 330,
+      "code": "NC",
+      "terminalId": 60,
+      "name": "NITRO CREEK",
+      "splc": "343100105",
+      "latDeg": 41.694020332,
+      "longDeg": -83.5283651452
+    },
+    {
+      "links": [],
+      "id": 334,
+      "code": "OL",
+      "terminalId": 60,
+      "name": "OTTOWA LOT",
+      "splc": "343100180",
+      "latDeg": 41.6857704403,
+      "longDeg": -83.5081389937
+    },
+    {
+      "links": [],
+      "id": 343,
+      "code": "SL",
+      "terminalId": 60,
+      "name": "STICKNEY LOT",
+      "splc": "343100701",
+      "latDeg": 41.698876712,
+      "longDeg": -83.5249466928
+    },
+    {
+      "links": [],
+      "id": 349,
+      "code": "TR",
+      "terminalId": 60,
+      "name": "TOLEDO RAIL",
+      "splc": "343100100",
+      "latDeg": 41.69699,
+      "longDeg": -83.5272
+    },
+    {
+      "links": [],
+      "id": 350,
+      "code": "TT",
+      "terminalId": 60,
+      "name": "Taylor Lot",
+      "splc": "343100701",
+      "latDeg": 41.696993,
+      "longDeg": -83.527177
+    },
+    {
+      "links": [],
+      "id": 353,
+      "code": "WL",
+      "terminalId": 60,
+      "name": "WALBRIDGE",
+      "splc": "362120000",
+      "latDeg": 41.736713,
+      "longDeg": -85.88666
+    },
+    {
+      "links": [],
+      "id": 358,
+      "code": "BL",
+      "terminalId": 63,
+      "name": "BRAMPTON LOT",
+      "splc": "042109302",
+      "latDeg": 43.7488,
+      "longDeg": -79.7236666667
+    },
+    {
+      "links": [],
+      "id": 370,
+      "code": "OB",
+      "terminalId": 63,
+      "name": "OBICO LOT",
+      "splc": "042019100",
+      "latDeg": 43.6289555556,
+      "longDeg": -79.5371333333
+    },
+    {
+      "links": [],
+      "id": 374,
+      "code": "BL",
+      "terminalId": 64,
+      "name": "BRAMPTON LOT (64)",
+      "splc": "043936000",
+      "latDeg": 42.9221,
+      "longDeg": -81.18255
+    },
+    {
+      "links": [],
+      "id": 375,
+      "code": "OB",
+      "terminalId": 64,
+      "name": "Outfitters",
+      "splc": "043936000",
+      "latDeg": 42.9220058824,
+      "longDeg": -81.1826941177
+    },
+    {
+      "links": [],
+      "id": 384,
+      "code": "OK",
+      "terminalId": 67,
+      "name": "OAKVILLE LOT",
+      "splc": "042401000",
+      "latDeg": 43.4759954736,
+      "longDeg": -79.6686470902
+    },
+    {
+      "links": [],
+      "id": 386,
+      "code": "WL",
+      "terminalId": 67,
+      "name": "WONDERLAND",
+      "splc": "042401000",
+      "latDeg": 43.46,
+      "longDeg": 79.65
+    },
+    {
+      "links": [],
+      "id": 390,
+      "code": "EF",
+      "terminalId": 68,
+      "name": "Warren",
+      "splc": "315878000",
+      "latDeg": 42.516,
+      "longDeg": -83.02968
+    },
+    {
+      "links": [],
+      "id": 393,
+      "code": "LO",
+      "terminalId": 68,
+      "name": "Lake Orion Lot",
+      "splc": "315911000",
+      "latDeg": 42.7103408006,
+      "longDeg": -83.2640877341
+    },
+    {
+      "links": [],
+      "id": 403,
+      "code": "LT",
+      "terminalId": 69,
+      "name": "Toyota Lot",
+      "splc": "344150000",
+      "latDeg": 41.1761058376,
+      "longDeg": -80.8748738579
+    },
+    {
+      "links": [],
+      "id": 405,
+      "code": "SL",
+      "terminalId": 69,
+      "name": "WARREN LOT",
+      "splc": "344150000",
+      "latDeg": 41.1718,
+      "longDeg": -80.8769
+    },
+    {
+      "links": [],
+      "id": 407,
+      "code": "UL",
+      "terminalId": 69,
+      "name": "WARREN GM LOT",
+      "splc": "344150000",
+      "latDeg": 41.1761058225,
+      "longDeg": -80.874869687
+    },
+    {
+      "links": [],
+      "id": 416,
+      "code": "U2",
+      "terminalId": 70,
+      "name": "Lordstown NB",
+      "splc": "344192000",
+      "latDeg": 41.176,
+      "longDeg": -80.8749
+    },
+    {
+      "links": [],
+      "id": 417,
+      "code": "UU",
+      "terminalId": 70,
+      "name": "LORDSTOWN LOT",
+      "splc": "344192000",
+      "latDeg": 41.176,
+      "longDeg": -80.8749
+    },
+    {
+      "links": [],
+      "id": 422,
+      "code": "NB",
+      "terminalId": 73,
+      "name": "NORTH YARD",
+      "splc": "185176000",
+      "latDeg": 43.1289650538,
+      "longDeg": -79.024788172
+    },
+    {
+      "links": [],
+      "id": 423,
+      "code": "NI",
+      "terminalId": 73,
+      "name": "NIAGARA",
+      "splc": "185176000",
+      "latDeg": 43.1279012608,
+      "longDeg": -79.026189428
+    },
+    {
+      "links": [],
+      "id": 424,
+      "code": "NS",
+      "terminalId": 73,
+      "name": "NORFOLK YARD",
+      "splc": "185371000",
+      "latDeg": 42.88362,
+      "longDeg": -78.7471
+    },
+    {
+      "links": [],
+      "id": 425,
+      "code": "SN",
+      "terminalId": 73,
+      "name": "STORAGE NIAGARA",
+      "splc": "185176000",
+      "latDeg": 43.1279012608,
+      "longDeg": -79.026189428
+    },
+    {
+      "links": [],
+      "id": 426,
+      "code": "WS",
+      "terminalId": 73,
+      "name": "WEST SENECA",
+      "splc": "185302000",
+      "latDeg": 42.84544,
+      "longDeg": -78.73844
+    },
+    {
+      "links": [],
+      "id": 427,
+      "code": "7B",
+      "terminalId": 74,
+      "name": "7B LOT",
+      "splc": "232352000",
+      "latDeg": 39.25686,
+      "longDeg": -76.533836
+    },
+    {
+      "links": [],
+      "id": 428,
+      "code": "9B",
+      "terminalId": 74,
+      "name": "9B LOT",
+      "splc": "232352001",
+      "latDeg": 39.243052381,
+      "longDeg": -76.524
+    },
+    {
+      "links": [],
+      "id": 430,
+      "code": "BT",
+      "terminalId": 74,
+      "name": "BT LOT",
+      "splc": "234000002",
+      "latDeg": 39.2440498822,
+      "longDeg": -76.5818575972
+    },
+    {
+      "links": [],
+      "id": 431,
+      "code": "CB",
+      "terminalId": 74,
+      "name": "CURTIS BAY",
+      "splc": "234000390",
+      "latDeg": 39.2445037736,
+      "longDeg": -76.5817339623
+    },
+    {
+      "links": [],
+      "id": 432,
+      "code": "NL",
+      "terminalId": 74,
+      "name": "North Lot",
+      "splc": "236389000",
+      "latDeg": 39.1391201877,
+      "longDeg": -76.7912726592
+    },
+    {
+      "links": [],
+      "id": 434,
+      "code": "SL",
+      "terminalId": 74,
+      "name": "SOUTH LOT",
+      "splc": "236389000",
+      "latDeg": 39.1349891249,
+      "longDeg": -76.7914799228
+    },
+    {
+      "links": [],
+      "id": 437,
+      "code": "PH",
+      "terminalId": 76,
+      "name": "PHILADELPHIA",
+      "splc": "207800000",
+      "latDeg": 39.8918144046,
+      "longDeg": -75.1567610505
+    },
+    {
+      "links": [],
+      "id": 438,
+      "code": "DM",
+      "terminalId": 77,
+      "name": "Doremus Lot",
+      "splc": "191600000",
+      "latDeg": 40.7023077817,
+      "longDeg": -74.1386258807
+    },
+    {
+      "links": [],
+      "id": 439,
+      "code": "NY",
+      "terminalId": 77,
+      "name": "Newark LOT",
+      "splc": "191600000",
+      "latDeg": 40.6956643467,
+      "longDeg": -74.1282612607
+    },
+    {
+      "links": [],
+      "id": 444,
+      "code": "DM",
+      "terminalId": 79,
+      "name": "Doremus Lot",
+      "splc": "191649800",
+      "latDeg": 40.7023000001,
+      "longDeg": -74.1385857142
+    },
+    {
+      "links": [],
+      "id": 445,
+      "code": "EL",
+      "terminalId": 79,
+      "name": "PORT ELIZABETH LOT",
+      "splc": "191600000",
+      "latDeg": 40.693283,
+      "longDeg": -74.129492
+    },
+    {
+      "links": [],
+      "id": 449,
+      "code": "VL",
+      "terminalId": 79,
+      "name": "PORT NEWARK E LOT",
+      "splc": "191600000",
+      "latDeg": 40.6977338565,
+      "longDeg": -74.1377758968
+    },
+    {
+      "links": [],
+      "id": 452,
+      "code": "CL",
+      "terminalId": 95,
+      "name": "Cassens Lot",
+      "splc": "434300000",
+      "latDeg": 36.0988,
+      "longDeg": -86.7486
+    },
+    {
+      "links": [],
+      "id": 454,
+      "code": "NL",
+      "terminalId": 95,
+      "name": "NASHVILLE LOT",
+      "splc": "434300000",
+      "latDeg": 36.0988,
+      "longDeg": -86.7486
+    },
+    {
+      "links": [],
+      "id": 455,
+      "code": "OB",
+      "terminalId": 95,
+      "name": "OUTBACK AREA",
+      "splc": "433117000",
+      "latDeg": 35.9714114036,
+      "longDeg": -86.486045614
+    },
+    {
+      "links": [],
+      "id": 456,
+      "code": "RL",
+      "terminalId": 95,
+      "name": "RELEASING LOT",
+      "splc": "433117000",
+      "latDeg": 35.9713875852,
+      "longDeg": -86.4857422407
+    },
+    {
+      "links": [],
+      "id": 457,
+      "code": "SP",
+      "terminalId": 95,
+      "name": "SPEEDWAY",
+      "splc": "433117000",
+      "latDeg": 35.977939,
+      "longDeg": -86.526275
+    },
+    {
+      "links": [],
+      "id": 460,
+      "code": "RV",
+      "terminalId": 50,
+      "name": "RIVER YARD",
+      "splc": "318100321",
+      "latDeg": 42.361479,
+      "longDeg": -82.960828
+    },
+    {
+      "links": [],
+      "id": 461,
+      "code": "D2",
+      "terminalId": 50,
+      "name": "MACK PLANT YARD",
+      "splc": "318100302",
+      "latDeg": 42.3755933333,
+      "longDeg": -82.9744266666
+    },
+    {
+      "links": [],
+      "id": 463,
+      "code": "ML",
+      "terminalId": 98,
+      "name": "MECHANICSVILLE",
+      "splc": "171760000",
+      "latDeg": 42.9169826087,
+      "longDeg": -73.7158304347
+    },
+    {
+      "links": [],
+      "id": 465,
+      "code": "MK",
+      "terminalId": 30,
+      "name": "MK LOT",
+      "splc": "381441000",
+      "latDeg": 41.5821730887,
+      "longDeg": -87.6550584098
+    },
+    {
+      "links": [],
+      "id": 467,
+      "code": "EH",
+      "terminalId": 68,
+      "name": "Marion",
+      "splc": "348540000",
+      "latDeg": 40.6022741936,
+      "longDeg": -83.0548
+    },
+    {
+      "links": [],
+      "id": 468,
+      "code": "40",
+      "terminalId": 48,
+      "name": "REGION DEALER",
+      "splc": "369168000",
+      "latDeg": 40.383575,
+      "longDeg": -86.812975
+    },
+    {
+      "links": [],
+      "id": 469,
+      "code": "70",
+      "terminalId": 48,
+      "name": "REGION DEALER",
+      "splc": "369168000",
+      "latDeg": 40.383575,
+      "longDeg": -86.812975
+    },
+    {
+      "links": [],
+      "id": 470,
+      "code": "JR",
+      "terminalId": 50,
+      "name": "JEFFERSON RAIL",
+      "splc": "318101000",
+      "latDeg": 42.3772687772,
+      "longDeg": -82.975538542
+    },
+    {
+      "links": [],
+      "id": 471,
+      "code": "WH",
+      "terminalId": 50,
+      "name": "WOODHAVEN LOT",
+      "splc": "318381000",
+      "latDeg": 42.1559933288,
+      "longDeg": -83.2328363839
+    },
+    {
+      "links": [],
+      "id": 472,
+      "code": "02",
+      "terminalId": 55,
+      "name": "LOT 02",
+      "splc": "349155720",
+      "latDeg": 40.327846875,
+      "longDeg": -83.5403218751
+    },
+    {
+      "links": [],
+      "id": 473,
+      "code": "03",
+      "terminalId": 55,
+      "name": "LOT 03",
+      "splc": "349155720",
+      "latDeg": 40.327846875,
+      "longDeg": -83.5403218751
+    },
+    {
+      "links": [],
+      "id": 474,
+      "code": "01",
+      "terminalId": 55,
+      "name": "LOT 01",
+      "splc": "349155720",
+      "latDeg": 40.327846875,
+      "longDeg": -83.5403218751
+    },
+    {
+      "links": [],
+      "id": 475,
+      "code": "PN",
+      "terminalId": 76,
+      "name": "NS YARD",
+      "splc": "207800000",
+      "latDeg": 39.895690051,
+      "longDeg": -75.1540796016
+    },
+    {
+      "links": [],
+      "id": 476,
+      "code": "MT",
+      "terminalId": 51,
+      "name": "MORTERM LOT",
+      "splc": "043739500",
+      "latDeg": 42.269582,
+      "longDeg": -83.100628
+    },
+    {
+      "links": [],
+      "id": 480,
+      "code": "SP",
+      "terminalId": 30,
+      "name": "SCHILLER PARK",
+      "splc": "381215000",
+      "latDeg": 41.9578,
+      "longDeg": -87.8678
+    },
+    {
+      "links": [],
+      "id": 481,
+      "code": "PG",
+      "terminalId": 50,
+      "name": "PARTS GALORE LOT",
+      "splc": "318384100",
+      "latDeg": 42.0873,
+      "longDeg": -83.3016
+    },
+    {
+      "links": [],
+      "id": 482,
+      "code": "TL",
+      "terminalId": 55,
+      "name": "East Liberty Plant",
+      "splc": "349155720",
+      "latDeg": 40.3311,
+      "longDeg": -83.5819
+    },
+    {
+      "links": [],
+      "id": 483,
+      "code": "ML",
+      "terminalId": 55,
+      "name": "Marysville Plant",
+      "splc": "348960770",
+      "latDeg": 40.2364,
+      "longDeg": -83.3671
+    },
+    {
+      "links": [],
+      "id": 485,
+      "code": "53",
+      "terminalId": 27,
+      "name": "53 LOT",
+      "splc": "041814000",
+      "latDeg": 43.87412,
+      "longDeg": -78.864696
+    },
+    {
+      "links": [],
+      "id": 486,
+      "code": "AN",
+      "terminalId": 74,
+      "name": "CSX Jessup",
+      "splc": "236389000",
+      "latDeg": 39.1376,
+      "longDeg": -76.7895
+    },
+    {
+      "links": [],
+      "id": 505,
+      "code": "HB",
+      "terminalId": 50,
+      "name": "HB LOT",
+      "splc": "318100000",
+      "latDeg": 42.4004,
+      "longDeg": -83.0283
+    },
+    {
+      "links": [],
+      "id": 492,
+      "code": "BL",
+      "terminalId": 30,
+      "name": "BENSONVILL",
+      "splc": "381851001",
+      "latDeg": 41.9623469131,
+      "longDeg": -87.8672057286
+    },
+    {
+      "links": [],
+      "id": 493,
+      "code": "OA",
+      "terminalId": 50,
+      "name": "OAKWOOD",
+      "splc": "318100000",
+      "latDeg": 42.28924,
+      "longDeg": -83.1493
+    },
+    {
+      "links": [],
+      "id": 494,
+      "code": "LO",
+      "terminalId": 60,
+      "name": "LO Lot",
+      "splc": "343100701",
+      "latDeg": 41.698876712,
+      "longDeg": -83.5249466928
+    },
+    {
+      "links": [],
+      "id": 496,
+      "code": "ZL",
+      "terminalId": 28,
+      "name": "Allison Plant",
+      "splc": "044324000",
+      "latDeg": 44.1529289163,
+      "longDeg": -79.8428499721
+    },
+    {
+      "links": [],
+      "id": 497,
+      "code": "OB",
+      "terminalId": 28,
+      "name": "OBICO LOT",
+      "splc": "042019000",
+      "latDeg": 43.628574,
+      "longDeg": -79.539278
+    },
+    {
+      "links": [],
+      "id": 499,
+      "code": "PF",
+      "terminalId": 50,
+      "name": "Park N Fly",
+      "splc": "318370000",
+      "latDeg": 42.241262,
+      "longDeg": -83.34561
+    },
+    {
+      "links": [],
+      "id": 500,
+      "code": "44",
+      "terminalId": 42,
+      "name": "KY 44 Lot",
+      "splc": "286947000",
+      "latDeg": 38.002497,
+      "longDeg": -85.684006
+    },
+    {
+      "links": [],
+      "id": 508,
+      "code": "XX",
+      "terminalId": 50,
+      "name": "UNK PUT ON DS HLD",
+      "splc": "318100718",
+      "latDeg": 42.3724664581,
+      "longDeg": -82.959319109
+    },
+    {
+      "links": [],
+      "id": 503,
+      "code": "ZU",
+      "terminalId": 68,
+      "name": "AWC Pontiac",
+      "splc": "315930000",
+      "latDeg": 42.605425,
+      "longDeg": -83.247979
+    },
+    {
+      "links": [],
+      "id": 504,
+      "code": "MS",
+      "terminalId": 31,
+      "name": "MAJESTIC STAR CASINO",
+      "splc": "363300000",
+      "latDeg": 41.640546,
+      "longDeg": -87.417963
+    },
+    {
+      "links": [],
+      "id": 509,
+      "code": "7Y",
+      "terminalId": 40,
+      "name": "7Y LOT",
+      "splc": "361450000",
+      "latDeg": 41.33281,
+      "longDeg": -85.0834
+    },
+    {
+      "links": [],
+      "id": 510,
+      "code": "ZF",
+      "terminalId": 40,
+      "name": "ZF LOT",
+      "splc": "361771000",
+      "latDeg": 41.07229,
+      "longDeg": -84.9504
+    },
+    {
+      "links": [],
+      "id": 511,
+      "code": "AZ",
+      "terminalId": 31,
+      "name": "AZ LOT",
+      "splc": "384102000",
+      "latDeg": 41.6787,
+      "longDeg": -88.0707
+    },
+    {
+      "links": [],
+      "id": 512,
+      "code": "SB",
+      "terminalId": 42,
+      "name": "STRAWBERRY",
+      "splc": "286550000",
+      "latDeg": 38.17044,
+      "longDeg": -85.7507
+    }
+  ]
